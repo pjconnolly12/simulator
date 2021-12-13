@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Home } from './components/Home';
+import { NavBar } from './components/Navbar';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Rules } from './components/Rules';
+import { LeagueCalendar } from './components/Calendar';
+import { Schedule } from './components/Schedule';
+import { Teams } from './components/Teams';
+import { Standings } from './components/Standings';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Router>
+  <div className="flex flex-col bg-babyPowder">
+    <NavBar />
+    <Routes>
+      <Route path='/rules' element={<Rules/>}/>
+      <Route path='/teams' element={<Teams/>}/>
+      <Route path='/calendar' element={<LeagueCalendar/>}/>
+      <Route path='/standings' element={<Standings/>} />
+      <Route path='/schedule' element={<Schedule/>}/>
+      <Route path='/' element={<Home/>} />
+    </Routes>
+  </div>
+</Router>
   );
 }
 
