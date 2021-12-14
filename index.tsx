@@ -53,7 +53,16 @@ app.post("/send", function (req, res) {
 
 //Routes//
 
-app.get("/");
+app.get('/', (req, res, next) => {
+  res.status(200).json({
+      status: 'success',
+      data: {
+          name: 'simulator-league',
+          version: '0.1.0'
+      }
+  });
+
+});
 
 //add event//
 app.post('/calendar', async (req, res) => {
