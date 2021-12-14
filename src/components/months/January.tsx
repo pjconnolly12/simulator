@@ -11,7 +11,7 @@ export const January = (): JSX.Element => {
 
   useEffect(() =>  {
       axios
-      .get<ICalendar[]>("http://localhost:5000/calendar/january", {
+      .get<ICalendar[]>("/calendar/january", {
         headers: {
           "Content-Type": "application/json"
         },

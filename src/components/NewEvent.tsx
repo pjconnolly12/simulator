@@ -7,10 +7,6 @@ import { useForm } from "react-hook-form";
 export const NewEntry = (props:INewEntryClick): JSX.Element => {
 
   const [teams, setTeams] = useState<ITeam[]>([])
-  const [mailerState, setMailerState] = useState({
-    email: "",
-    message: "",
-  });
 
   type Inputs = {
     team: string,
@@ -19,7 +15,7 @@ export const NewEntry = (props:INewEntryClick): JSX.Element => {
 
   useEffect(() =>  {
       axios
-      .get<ITeam[]>("http://localhost:5000/teams", {
+      .get<ITeam[]>("/teams", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -45,7 +41,7 @@ export const NewEntry = (props:INewEntryClick): JSX.Element => {
       let email = `pjconnolly12@gmail.com`;
       let message = `This email is to confirm that ${data.team} have a tee time on ${props.entry_date.slice(0,10)} at ${data.time}`;
       axios
-        .post("http://localhost:5000/calendar", {
+        .post("/calendar", {
           team: data.team,
           time: data.time,
           entry_date: props.entry_date.slice(0,10)
@@ -78,7 +74,7 @@ export const NewEntry = (props:INewEntryClick): JSX.Element => {
   }
 
   const submitEmail = async (email: string, message: string) => {
-    const response = await fetch("http://localhost:5000/send", {
+    const response = await fetch("/send", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

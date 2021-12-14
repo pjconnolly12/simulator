@@ -60,7 +60,7 @@ app.post("/send", function (req, res) {
 //Routes//
 
 app.get("*", (req, res) => {
-  res.sendFile("./build/index.html")
+  res.sendFile(__dirname, "./build/index.html")
 });
 
 //add event//
