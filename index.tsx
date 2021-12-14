@@ -53,6 +53,8 @@ app.post("/send", function (req, res) {
 
 //Routes//
 
+app.get("/");
+
 //add event//
 app.post('/calendar', async (req, res) => {
   try {
