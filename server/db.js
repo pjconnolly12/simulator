@@ -7,7 +7,7 @@ const dbDatabase = process.env.PGDATABASE;
 const dbPort = process.env.PGPORT;
 const dbSSL = process.env.PGSSLMODE;
 
-const config = {
+const devConfig = {
   user: dbUser,
   password: dbPassword,
   host: 'localhost',
@@ -16,12 +16,11 @@ const config = {
   sslmode: dbSSL,
 };
 
-const proConfig = {
-  connectionString: process.env.DATABASE_URL,
-};
+const proConfig = process.env.DATABASE_URL;
 
-const pool = new Pool(
-  process.env.NODE_ENV === 'production' ? proConfig : config
-);
+const pool = new Pool({
+  connectionString:
+    process.env.NODE_ENV === 'production' ? proConfig : devConfig,
+});
 
 module.exports = pool;
