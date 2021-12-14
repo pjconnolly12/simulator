@@ -35,7 +35,7 @@
     "heroku-postbuild": "npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "nodemon server/index.tsx",
+    "server": "nodemon index.tsx",
     "client": "react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "eject": "react-scripts eject",
