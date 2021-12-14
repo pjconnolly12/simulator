@@ -17,7 +17,7 @@ app.use(express.json());
 const server = http.createServer(app)
 
 if (process.env.NODE_ENV === "production"){
-  app.use(express.static("./public"))
+  app.use(express.static("./build"))
 }
 
 // email //
@@ -60,7 +60,7 @@ app.post("/send", function (req, res) {
 //Routes//
 
 app.get("*", (req, res) => {
-  res.sendFile("./public/index.html")
+  res.sendFile("./build/index.html")
 });
 
 //add event//
