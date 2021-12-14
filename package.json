@@ -31,7 +31,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "serve -s start",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "nodemon server/index.tsx",
