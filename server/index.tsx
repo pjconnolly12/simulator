@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const http = require('http');
 const cors = require('cors');
 const pool = require('./db');
 const axios = require('axios').default
@@ -11,6 +12,7 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
+const server = http.createServer(app)
 
 // email //
 let transporter = nodemailer.createTransport({
@@ -109,6 +111,6 @@ app.get('/teams', async (req, res) => {
 
 
 
-app.listen(process.env.PORT || 5000, () => {
+server.listen(process.env.PORT || 5000, () => {
   console.log('server has started on port 5000');
 });
