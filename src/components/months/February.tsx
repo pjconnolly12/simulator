@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ICalendar } from '../../tools/interfaces';
+import { NewEntry } from '../NewEvent';
 
 export const February = (): JSX.Element => {
 
   const [dates, setDates] = useState<ICalendar[]>([])
+  const [toggleEntryView, setToggleEntryView] = useState(false)
+  const [entryDate, setEntryDate] = useState<string>("")
 
   useEffect(() =>  {
       axios
-      .get<ICalendar[]>("http://localhost:5000/calendar/february", {
+      .get<ICalendar[]>("/calendar/february", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -25,6 +28,17 @@ export const February = (): JSX.Element => {
           console.log(error)
       });
   }, [])
+
+  const selectDate = async (date:string) => {
+    setToggleEntryView(true)
+    setEntryDate(date)
+  }
+
+  const buttonClick = {
+    toggleOff: setToggleEntryView,
+    toggle: toggleEntryView,
+    entry_date: entryDate
+  }
 
 
   const createCalendar = dates.map(day => {
@@ -50,6 +64,7 @@ export const February = (): JSX.Element => {
 
   return (
       <div className="flex flex-wrap justify-center md:justify-start md:ml-6">
+      <NewEntry {...buttonClick}/>
       {createCalendar}
       </div>
   );
