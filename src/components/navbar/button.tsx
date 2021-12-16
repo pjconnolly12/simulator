@@ -5,7 +5,7 @@ import { INavButtonProps } from '../../tools/interfaces'
 
 export const NavButton: React.FC<INavButtonProps> = (props): JSX.Element => {
   return (
-    <div className="text-babyBlue hover:underline hover:text-secondary px-3 py-2 rounded-md text-sm font-medium">
+    <div className="text-babyBlue hover:underline hover:text-lightCyan px-3 py-2 rounded-md text-sm font-medium">
       <Link to={props.redirect}>{props.pageTitle}</Link>
     </div>
   );

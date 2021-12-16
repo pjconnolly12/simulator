@@ -4,10 +4,10 @@ export const Rules = (): JSX.Element => {
 
 
   return (
-    <div className="ml-4 mt-2 bg-babyPowder">
-      <h1 className="font-bold text-2xl mb-4 text-center">League Rules</h1>
-      <div className="flex flex-wrap flex-col md:flex-row">
-      <div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12">
+    <div className="ml-4 mt-2 bg-babyPowder h-full lg:h-screen">
+      <h1 className="font-bold text-2xl mb-4 flex flex-col items-center">League Rules</h1>
+      <div className="flex flex-wrap flex-col items-center h-2/3 md:flex-row md:justify-center">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12 lg:h-full">
   <h2 className="font-bold text-xl mb-4 text-center">Format</h2>
   <ul className="list-disc list-inside pl-2">
     <li>Scramble Format</li>
@@ -26,7 +26,7 @@ export const Rules = (): JSX.Element => {
       </ul>
   </ul>
 </div>
-<div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12">
+<div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12 lg:h-full">
   <h2 className="font-bold text-xl mb-4 text-center">Playoffs</h2>
   <ul className="list-disc list-inside pl-2">
     <li>8 Teams will make the playoffs</li>
@@ -36,7 +36,7 @@ export const Rules = (): JSX.Element => {
     <li>Semi Finals and Finals will be played during the championship cookout</li>
   </ul>
 </div>
-<div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12">
+<div className="max-w-sm rounded overflow-hidden shadow-lg w-1/3 m-4 bg-lightCyan p-2 w-11/12 h-full">
   <h2 className="font-bold text-xl mb-4 text-center">Payments</h2>
   <ul className="list-disc list-inside pl-2">
             <li>$20 Entry Fee</li>
