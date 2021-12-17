@@ -216,6 +216,8 @@ module.exports = {
         'Helvetica',
         'sans-serif',
       ],
+      finger: ['"finer paint"', 'serif'],
+      montserrat: ['montserrat', 'serif'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

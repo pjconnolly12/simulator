@@ -6,7 +6,7 @@ import { NewEntry } from '../NewEvent';
 export const January = (): JSX.Element => {
 
   const [dates, setDates] = useState<ICalendar[]>([])
-  const [toggleEntryView, setToggleEntryView] = useState(false)
+  const [toggleEntryView, setToggleEntryView] = useState(true)
   const [entryDate, setEntryDate] = useState<string>("")
 
   useEffect(() =>  {
