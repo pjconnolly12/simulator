@@ -9,10 +9,8 @@ const PORT = process.env.PORT || 5000;
 // const fetch = require("node-fetch");
 require('dotenv').config();
 
-
 app.use(cors());
 app.use(express.json());
-
 
 const server = http.createServer(app)
 
@@ -60,7 +58,7 @@ app.post("/send", function (req, res) {
 //Routes//
 
 app.get("*", (req, res) => {
-  res.sendFile(__dirname, "./build/index.html")
+  res.sendFile(__dirname, "./src/build/index.html")
 });
 
 //add event//
@@ -118,8 +116,6 @@ app.get('/teams', async (req, res) => {
     console.error(err.message);
   }
 });
-
-
 
 server.listen(PORT, () => {
   console.log(`server has started on port ${PORT}`);

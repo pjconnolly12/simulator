@@ -18,10 +18,15 @@ const devConfig = {
 
 const proConfig = process.env.DATABASE_URL;
 
+// Prod Setup //
+
 const pool = new Pool({
-  connectionString:
-    process.env.NODE_ENV === 'production' ? proConfig : devConfig,
+  connectionString: proConfig,
   ssl: { rejectUnauthorized: false },
 });
+
+// Dev Setup //
+
+// const pool = new Pool(devConfig);
 
 module.exports = pool;
