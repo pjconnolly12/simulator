@@ -26,10 +26,12 @@ export interface ICalendar {
   restrictions: string
   matches: string[]
   day_of_month: number
+  day_of_week: string
 }
 
 export interface INewEntryClick {
-  toggleOff: any,
-  toggle: boolean,
+  toggleOff: any
+  toggle: boolean
   entry_date: string
+  day_of_week: string
 }

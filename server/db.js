@@ -20,13 +20,13 @@ const proConfig = process.env.DATABASE_URL;
 
 // Prod Setup //
 
-const pool = new Pool({
-  connectionString: proConfig,
-  ssl: { rejectUnauthorized: false },
-});
+// const pool = new Pool({
+//   connectionString: proConfig,
+//   ssl: { rejectUnauthorized: false },
+// });
 
 // Dev Setup //
 
-// const pool = new Pool(devConfig);
+const pool = new Pool(devConfig);
 
 module.exports = pool;

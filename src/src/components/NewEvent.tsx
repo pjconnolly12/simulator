@@ -87,7 +87,7 @@ export const NewEntry = (props:INewEntryClick): JSX.Element => {
   return (
     <div className={"flex p-2 w-3/4 justify-center text-xs fixed inset-0 z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-babyBlue rounded shadow-lg border-2 border-darkBlue md:w-1/2 " + (props.toggle ? "flex" : "hidden")}>
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col m-6 p-4 md:w-1/3 lg:p-8">
-      <label className='block text-sm font-medium text-darkBlue mt-4 text-lg'>Day: {props.entry_date.slice(5,10)}</label>
+      <label className='block text-sm font-medium text-darkBlue mt-4 text-lg'>Day: {props.entry_date.slice(5,10)} - {props.day_of_week}</label>
       <label className="block text-sm font-medium text-darkBlue mt-4">Team:</label>
       <select {...register("team")} className="rounded mt-1 p-1" placeholder='Select your Team' >
       <option>Select your Team</option>

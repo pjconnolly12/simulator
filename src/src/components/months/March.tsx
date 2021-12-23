@@ -8,6 +8,7 @@ export const March = (): JSX.Element => {
   const [dates, setDates] = useState<ICalendar[]>([])
   const [toggleEntryView, setToggleEntryView] = useState(false)
   const [entryDate, setEntryDate] = useState<string>("")
+  const [entryDay, setEntryDay] = useState<string>("")
 
   useEffect(() =>  {
       axios
@@ -29,15 +30,17 @@ export const March = (): JSX.Element => {
       });
   }, [])
 
-  const selectDate = async (date:string) => {
+  const selectDate = async (date:string, day:string) => {
     setToggleEntryView(true)
     setEntryDate(date)
+    setEntryDay(day)
   }
 
   const buttonClick = {
     toggleOff: setToggleEntryView,
     toggle: toggleEntryView,
-    entry_date: entryDate
+    entry_date: entryDate,
+    day_of_week: entryDay
   }
 
 
@@ -54,7 +57,7 @@ export const March = (): JSX.Element => {
     }
 
     return (
-      <div className="w-1/3 text-left m-2 h-32 border-2 border-darkBlue md:w-48" onClick={() => {selectDate(day.entry_date)}}>
+      <div className="w-1/3 text-left m-2 h-32 border-2 border-darkBlue md:w-48" onClick={() => {selectDate(day.entry_date, day.day_of_week)}}>
         <div className="pt-1 pl-1 border-b-2 border-darkBlue bg-darkBlue font-semibold text-babyBlue">{day.day_of_month}</div>
         <div className="pt-1 pl-1 text-xs md:text-base">{day.restrictions}</div>
         {events}
