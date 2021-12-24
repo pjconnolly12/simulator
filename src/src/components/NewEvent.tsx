@@ -38,7 +38,7 @@ export const NewEntry = (props:INewEntryClick): JSX.Element => {
       let result = teams.filter(obj => {
         return obj.players === data.team
       })
-      let email = `pjconnolly12@gmail.com`;
+      let email = `pjconnolly12@gmail.com, ${result[0].player1_email}, ${result[0].player2_email}`;
       let message = `This email is to confirm that ${data.team} have a tee time on ${props.entry_date.slice(0,10)} at ${data.time}`;
       axios
         .post("/calendar", {

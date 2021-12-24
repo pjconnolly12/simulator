@@ -113,4 +113,11 @@ INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_we
 UPDATE calendar SET matches = array_append(matches, 'Geo & Dustin @ 5pm') WHERE entry_date = '2022-01-04'
 
 INSERT INTO teams (players, player1_email, player2_email) VALUES('Pat & Beav', 'pjconnolly12@gmail.com', 'jpcawley5@gmail.com');
-INSERT INTO teams (players, player1_email, player2_email) VALUES('Geo & Dustin', 'geod9@gmail.com', 'dramey10@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Geo & Dustin', 'george.delano9@gmail.com', 'dramey808@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Ben & Joe', 'bscheadesign@gmail.com', 'janichols86@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Lyndsie & Drew', 'lrabenius@gmail.com', 'ajmcspiritt@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Sean & Alex', 'sean.leblanc.1987@gmail.com', 'ajjohnston7@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Seth & Souhail', 'desjardinsseth@yahoo.com', 'ssemmar@yahoo.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('JL3 & Ryan', 'j_connolly@comcast.net', 'rmconnolly27@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Eric & JayR', 'owens.eric1985@gmail.com', 'jasonwrourke@gmail.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Renfield & JayD', 'mwconn05@gmail.com', 'jayd1055@yahoo.com');
