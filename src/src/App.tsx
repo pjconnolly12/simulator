@@ -12,6 +12,7 @@ import { LeagueCalendar } from './components/Calendar';
 import { Schedule } from './components/Schedule';
 import { Teams } from './components/Teams';
 import { Standings } from './components/Standings';
+import { Prizes } from './components/prizes';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Routes>
       <Route path='/rules' element={<Rules/>}/>
       <Route path='/teams' element={<Teams/>}/>
+      <Route path='/winners' element={<Prizes/>}/>
       <Route path='/calendar' element={<LeagueCalendar/>}/>
       <Route path='/standings' element={<Standings/>} />
       <Route path='/schedule' element={<Schedule/>}/>

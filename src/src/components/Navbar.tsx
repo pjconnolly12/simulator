@@ -28,6 +28,10 @@ export const NavBar = (): JSX.Element => {
     redirect: "/rules",
     pageTitle: "Rules" 
   }
+  const winners = {
+    redirect: "/winners",
+    pageTitle: "Winners"
+  }
 
   return (
     <>
@@ -65,6 +69,9 @@ export const NavBar = (): JSX.Element => {
               </li>
               <li className="nav-item">
                 <NavButton {...schedule} />
+              </li>
+              <li className="nav-item">
+                <NavButton {...winners} />
               </li>
               <li className="nav-item">
                 <NavButton {...rules} />
