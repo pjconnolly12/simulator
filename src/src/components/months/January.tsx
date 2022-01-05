@@ -12,24 +12,24 @@ export const January = (): JSX.Element => {
 
 
   useEffect(() =>  {
-      axios
-      .get<ICalendar[]>("/calendar/january", {
-        headers: {
-          "Content-Type": "application/json"
-        },
-      })
-      .then(response => {
-        console.log(response.data)
-        setDates(response.data);
-      })
-      .catch(ex => {
-        const error =
-        ex.response.status === 404
-          ? "Resource not found"
-          : "An unexpected error has occurred";
-          console.log(error)
-      });
-  }, [])
+    axios
+    .get<ICalendar[]>("/calendar/january", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+    })
+    .then(response => {
+      console.log(response.data)
+      setDates(response.data);
+    })
+    .catch(ex => {
+      const error =
+      ex.response.status === 404
+        ? "Resource not found"
+        : "An unexpected error has occurred";
+        console.log(error)
+    });
+  },[toggleEntryView])
 
   const selectDate = async (date:string, day:string) => {
     setToggleEntryView(true)
@@ -41,7 +41,7 @@ export const January = (): JSX.Element => {
     toggleOff: setToggleEntryView,
     toggle: toggleEntryView,
     entry_date: entryDate,
-    day_of_week: entryDay
+    day_of_week: entryDay,
   }
 
   const createCalendar = dates.map(day => {

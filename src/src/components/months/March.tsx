@@ -28,7 +28,7 @@ export const March = (): JSX.Element => {
           : "An unexpected error has occurred";
           console.log(error)
       });
-  }, [])
+  }, [toggleEntryView])
 
   const selectDate = async (date:string, day:string) => {
     setToggleEntryView(true)
@@ -40,7 +40,7 @@ export const March = (): JSX.Element => {
     toggleOff: setToggleEntryView,
     toggle: toggleEntryView,
     entry_date: entryDate,
-    day_of_week: entryDay
+    day_of_week: entryDay,
   }
 
 
