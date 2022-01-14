@@ -5,7 +5,7 @@ export const Standings = (): JSX.Element => {
   const teams = [
     {
       name: "Pat & Beav",
-      rd1: 0,
+      rd1: 46,
       rd2: 0,
       rd3: 0,
       rd4: 0,
@@ -29,7 +29,7 @@ export const Standings = (): JSX.Element => {
     },
     {
       name: "Ben & Joe",
-      rd1: 0,
+      rd1: 39,
       rd2: 0,
       rd3: 0,
       rd4: 0,
@@ -116,7 +116,7 @@ export const Standings = (): JSX.Element => {
                 Team
               </th>
               <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-darkBlue uppercase tracking-wider">
-                Total
+                Average
               </th>
               <th scope="col" className="px-6 py-3 text-left text-xs font-bold text-darkBlue uppercase tracking-wider">
                 RD1

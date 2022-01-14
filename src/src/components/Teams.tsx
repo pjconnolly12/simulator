@@ -3,7 +3,9 @@ import photo from '../images/insertPhoto.jpg';
 import dustinGeo from '../images/dustin-geo.jpg';
 import sethSouhail from '../images/seth-souhail.jpg';
 import joeBen from '../images/joe-ben.jpg';
-import seanAlex from '../images/sean-alex.jpg'
+import seanAlex from '../images/sean-alex.jpg';
+import ericJay from '../images/ericJay.jpg';
+import drewLynds from '../images/drewLynds.jpg';
 
 export const Teams = (): JSX.Element => {
 
@@ -18,7 +20,7 @@ export const Teams = (): JSX.Element => {
   },{
     name: "Drew and Lyndsie",
     score: 0,
-    photo: photo
+    photo: drewLynds
   },{
     name: "Sean and Alex",
     score: 7.3,
@@ -33,11 +35,15 @@ export const Teams = (): JSX.Element => {
     photo: joeBen
   },{
     name: "Eric and Rourke",
-    score: 0,
-    photo: photo
+    score: 3.9,
+    photo: ericJay
   },{
     name: "JL3 and Ryan",
     score: 10.7,
+    photo: photo
+  },{
+    name: "JayD and Brendan",
+    score: 0,
     photo: photo
   }]
 

@@ -122,4 +122,10 @@ INSERT INTO teams (players, player1_email, player2_email) VALUES('JL3 & Ryan', '
 INSERT INTO teams (players, player1_email, player2_email) VALUES('Eric & JayR', 'owens.eric1985@gmail.com', 'jasonwrourke@gmail.com');
 INSERT INTO teams (players, player1_email, player2_email) VALUES('Renfield & JayD', 'mwconn05@gmail.com', 'jayd1055@yahoo.com');
 
-UPDATE calendar SET matches = '{}' WHERE entry_date = '2022-01-08' 
+UPDATE calendar SET matches = '{}' WHERE entry_date = '2022-01-03'
+
+UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-12';
+UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-19';
+UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-26';
+UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-02-02';
+UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-02-09';
