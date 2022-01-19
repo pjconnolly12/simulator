@@ -120,12 +120,15 @@ INSERT INTO teams (players, player1_email, player2_email) VALUES('Sean & Alex', 
 INSERT INTO teams (players, player1_email, player2_email) VALUES('Seth & Souhail', 'desjardinsseth@yahoo.com', 'ssemmar@yahoo.com');
 INSERT INTO teams (players, player1_email, player2_email) VALUES('JL3 & Ryan', 'j_connolly@comcast.net', 'rmconnolly27@gmail.com');
 INSERT INTO teams (players, player1_email, player2_email) VALUES('Eric & JayR', 'owens.eric1985@gmail.com', 'jasonwrourke@gmail.com');
-INSERT INTO teams (players, player1_email, player2_email) VALUES('Renfield & JayD', 'mwconn05@gmail.com', 'jayd1055@yahoo.com');
+INSERT INTO teams (players, player1_email, player2_email) VALUES('Brendon & JayD', 'brendon@gbent.net', 'jayd1055@yahoo.com');
 
-UPDATE calendar SET matches = '{}' WHERE entry_date = '2022-01-03'
+UPDATE calendar SET matches = '{}' WHERE entry_date = '2022-01-20'
 
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-12';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-19';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-01-26';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-02-02';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-02-09';
+
+UPDATE teams SET players = 'Brendon & JayD' WHERE player2_email = 'jayd1055@yahoo.com';
+UPDATE teams SET player1_email = 'Brendon@gbent.net' WHERE player2_email = 'jayd1055@yahoo.com';
