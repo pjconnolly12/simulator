@@ -9,7 +9,7 @@ export const Standings = (): JSX.Element => {
       rd2: 0,
       rd3: 0,
       rd4: 0,
-      total: 0,
+      total: 46,
     },
     {
       name: "Seth & Souhail",
@@ -33,7 +33,7 @@ export const Standings = (): JSX.Element => {
       rd2: 0,
       rd3: 0,
       rd4: 0,
-      total: 0,
+      total: 39,
     },
     {
       name: "Drew & Lyndsie",

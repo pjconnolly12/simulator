@@ -42,7 +42,7 @@ export const Teams = (): JSX.Element => {
     score: 10.7,
     photo: photo
   },{
-    name: "JayD and Brendan",
+    name: "JayD and Brendon",
     score: 0,
     photo: photo
   }]
