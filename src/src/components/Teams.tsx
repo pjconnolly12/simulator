@@ -6,6 +6,7 @@ import joeBen from '../images/joe-ben.jpg';
 import seanAlex from '../images/sean-alex.jpg';
 import ericJay from '../images/ericJay.jpg';
 import drewLynds from '../images/drewLynds.jpg';
+import ryanDad from '../images/ryanDad.jpg';
 
 export const Teams = (): JSX.Element => {
 
@@ -40,7 +41,7 @@ export const Teams = (): JSX.Element => {
   },{
     name: "JL3 and Ryan",
     score: 10.7,
-    photo: photo
+    photo: ryanDad
   },{
     name: "JayD and Brendon",
     score: 0,

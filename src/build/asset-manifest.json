@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.70c3908a.chunk.css",
-    "main.js": "/static/js/main.b2b80ec9.chunk.js",
-    "main.js.map": "/static/js/main.b2b80ec9.chunk.js.map",
+    "main.js": "/static/js/main.d24cff08.chunk.js",
+    "main.js.map": "/static/js/main.d24cff08.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bfb1ecda.js",
     "runtime-main.js.map": "/static/js/runtime-main.bfb1ecda.js.map",
     "static/js/2.15450652.chunk.js": "/static/js/2.15450652.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/pacificdunes.1166a78d.jpg": "/static/media/pacificdunes.1166a78d.jpg",
     "static/media/pga.2d353a06.jpg": "/static/media/pga.2d353a06.jpg",
     "static/media/pinehurst.da557f2e.jpg": "/static/media/pinehurst.da557f2e.jpg",
+    "static/media/ryanDad.e306d0f1.jpg": "/static/media/ryanDad.e306d0f1.jpg",
     "static/media/scottsdale.c1bdb1e1.jpg": "/static/media/scottsdale.c1bdb1e1.jpg",
     "static/media/sean-alex.2c050244.jpg": "/static/media/sean-alex.2c050244.jpg",
     "static/media/seth-souhail.07fa5d86.jpg": "/static/media/seth-souhail.07fa5d86.jpg",
@@ -31,6 +32,6 @@
     "static/js/runtime-main.bfb1ecda.js",
     "static/js/2.15450652.chunk.js",
     "static/css/main.70c3908a.chunk.css",
-    "static/js/main.b2b80ec9.chunk.js"
+    "static/js/main.d24cff08.chunk.js"
   ]
 }

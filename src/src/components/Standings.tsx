@@ -53,19 +53,19 @@ export const Standings = (): JSX.Element => {
     },
     {
       name: "Dustin & Geo",
-      rd1: 0,
+      rd1: 40,
       rd2: 0,
       rd3: 0,
       rd4: 0,
-      total: 0,
+      total: 40,
     },
     {
       name: "JL3 & Ryan",
-      rd1: 0,
+      rd1: 41,
       rd2: 0,
       rd3: 0,
       rd4: 0,
-      total: 0,
+      total: 41,
     }
   ]
 
