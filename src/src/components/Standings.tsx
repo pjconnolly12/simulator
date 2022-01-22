@@ -37,11 +37,11 @@ export const Standings = (): JSX.Element => {
     },
     {
       name: "Drew & Lyndsie",
-      rd1: 0,
+      rd1: 36,
       rd2: 0,
       rd3: 0,
       rd4: 0,
-      total: 0,
+      total: 36,
     },
     {
       name: "Eric & Rourke",
@@ -66,7 +66,15 @@ export const Standings = (): JSX.Element => {
       rd3: 0,
       rd4: 0,
       total: 41,
-    }
+    },
+    {
+    name: "JayD & B",
+    rd1: 41,
+    rd2: 0,
+    rd3: 0,
+    rd4: 0,
+    total: 41,
+  },
   ]
 
   const createStandings = teams

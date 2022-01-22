@@ -12,15 +12,15 @@ export const Teams = (): JSX.Element => {
 
   const teams = [{
     name: "Pat and Beavis",
-    score: 0,
+    score: 0.3,
     photo: photo
   },{
     name: "Dustin and Geo",
-    score: 5.6,
+    score: 7.1,
     photo: dustinGeo
   },{
     name: "Drew and Lyndsie",
-    score: 0,
+    score: 8.2,
     photo: drewLynds
   },{
     name: "Sean and Alex",
@@ -32,7 +32,7 @@ export const Teams = (): JSX.Element => {
     photo: sethSouhail
   },{
     name: "Ben and Joe",
-    score: 5.6,
+    score: 6.7,
     photo: joeBen
   },{
     name: "Eric and Rourke",
@@ -40,11 +40,11 @@ export const Teams = (): JSX.Element => {
     photo: ericJay
   },{
     name: "JL3 and Ryan",
-    score: 10.7,
+    score: 11.1,
     photo: ryanDad
   },{
     name: "JayD and Brendon",
-    score: 0,
+    score: 8.3,
     photo: photo
   }]
 
