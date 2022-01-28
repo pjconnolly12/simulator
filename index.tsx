@@ -117,6 +117,16 @@ app.get('/teams', async (req, res) => {
   }
 });
 
+// get standings //
+app.get('/standings', async (req, res) => {
+  try {
+    const standings = await pool.query('SELECT DISTINCT * FROM standings');
+    res.json(standings.rows);
+  } catch (err) {
+    console.error(err.message)
+  }
+})
+
 server.listen(PORT, () => {
   console.log(`server has started on port ${PORT}`);
 });

@@ -1,12 +1,12 @@
 import React from 'react';
-import pacific from '../images/pacificdunes.jpg'
-import harbour from '../images/harbour.jpeg'
-import innisbrook from '../images/innisbrook.jpg'
-import kiawah from '../images/kiawah.png'
-import pga from '../images/pga.jpg'
-import pinehurst from '../images/pinehurst.jpg'
-import scottsdale from '../images/scottsdale.jpg'
-import torrey from '../images/torrey.jpg'
+// import pacific from '/pacificdunes.jpg'
+// import harbour from '/harbour.jpeg'
+// import innisbrook from '/innisbrook.jpg'
+// import kiawah from '/kiawah.png'
+// import pga from '/pga.jpg'
+// import pinehurst from '/pinehurst.jpg'
+// import scottsdale from '/scottsdale.jpg'
+// import torrey from '/torrey.jpg'
 
 export const Schedule = (): JSX.Element => {
 
@@ -19,7 +19,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "5,089",
       holes: "Back Nine",
       round: "Preliminary",
-      image: pacific 
+      image: '/images/pacificdunes.jpg' 
     },
     {
       course: "Harbour Town Golf Links",
@@ -29,7 +29,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "4,999",
       holes: "Front Nine",
       round: "1",
-      image: harbour
+      image: '/images/harbour.jpeg'
     },
     {
       course: "Innisbrook",
@@ -39,7 +39,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "4,838",
       holes: "Back Nine",
       round: "2",
-      image: innisbrook
+      image: '/images/innisbrook.jpg'
     },
     {
       course: "TPC Scottsdale",
@@ -49,7 +49,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "5,402",
       holes: "Back Nine",
       round: "3",
-      image: scottsdale
+      image: '/images/scottsdale.jpg'
     },
     {
       course: "Pinehurst #2",
@@ -59,7 +59,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "4,938",
       holes: "Front Nine",
       round: "4",
-      image: pinehurst 
+      image: '/images/pinehurst.jpg'
     },
     {
       course: "PGA National",
@@ -69,7 +69,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "5,158",
       holes: "Back Nine",
       round: "Quarter-Finals",
-      image: pga 
+      image: '/images/pga.jpg'
     },
     {
       course: "Torrey Pines",
@@ -79,7 +79,7 @@ export const Schedule = (): JSX.Element => {
       yellow: "5,398",
       holes: "Back Nine",
       round: "Semi-Finals",
-      image: torrey 
+      image: '/images/torrey.jpg'
     },
     {
       course: "Kiawah Ocean Course",
@@ -89,14 +89,14 @@ export const Schedule = (): JSX.Element => {
       yellow: "5,312",
       holes: "Back Nine",
       round: "Championship",
-      image: kiawah 
+      image: '/images/kiawah.png'
     }
   ]
 
   const scheduleData = schedule.map(event => {
     return (
     <div key={event.course} className="max-w-sm rounded overflow-hidden shadow-lg w-2/3 m-4 bg-lightCyan">
-    <img className="object-contain" src={event.image} alt="teamPhoto"/>
+    <img className="object-contain" src={process.env.PUBLIC_URL + event.image} alt="teamPhoto"/>
     <div className="px-6 py-4">
       <div className="font-bold mb-2 text-darkBlue md:text-xl">{event.course}</div>
       <p className="text-darkBlue text-base"><strong>Round:</strong> {event.round}</p>

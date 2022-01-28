@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { NavButton } from './navbar/button';
 import { Link } from 'react-router-dom'
-import logo from '../images/golf-logo.png'
-import name from '../images/golf-name.png'
+// import logo from '/golf-logo.png'
+// import name from '/golf-name.png'
 
 export const NavBar = (): JSX.Element => {
 
@@ -40,8 +40,8 @@ export const NavBar = (): JSX.Element => {
           <div className="w-full relative flex items-end justify-between pt-2 md:w-auto md:static md:block md:justify-start">
           <div className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase text-babyBlue">
           <Link className='flex' to="/">
-          <img className="h-10" src={logo} alt="logo"/>
-          <img className="hidden object-contain h-8 ml-2 md:block" src={name} alt="name"/>
+          <img className="h-10" src={process.env.PUBLIC_URL + '/images/golf-logo.png'} alt="logo"/>
+          <img className="hidden object-contain h-8 ml-2 md:block" src={process.env.PUBLIC_URL + '/images/golf-name.png'} alt="name"/>
           </Link>
           </div>
             <svg className=" text-babyBlue h-10 cursor-pointer leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"

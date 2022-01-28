@@ -21,6 +21,17 @@ export interface ITeam {
   player2_email: string
 }
 
+export interface IStandings {
+  team_name: string
+  round1: number
+  round2: number
+  round3: number
+  round4: number
+  average: number
+  handicap: number
+  photo: string
+}
+
 export interface ICalendar {
   entry_date: string
   restrictions: string

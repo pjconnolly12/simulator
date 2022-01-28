@@ -1,84 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { IStandings } from '../tools/interfaces';
 
 export const Standings = (): JSX.Element => {
 
-  const teams = [
-    {
-      name: "Pat & Beav",
-      rd1: 46,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 46,
-    },
-    {
-      name: "Seth & Souhail",
-      rd1: 0,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 0,
-    },
-    {
-      name: "Sean & Alex",
-      rd1: 0,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 0,
-    },
-    {
-      name: "Ben & Joe",
-      rd1: 39,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 39,
-    },
-    {
-      name: "Drew & Lyndsie",
-      rd1: 36,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 36,
-    },
-    {
-      name: "Eric & Rourke",
-      rd1: 0,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 0,
-    },
-    {
-      name: "Dustin & Geo",
-      rd1: 40,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 40,
-    },
-    {
-      name: "JL3 & Ryan",
-      rd1: 41,
-      rd2: 0,
-      rd3: 0,
-      rd4: 0,
-      total: 41,
-    },
-    {
-    name: "JayD & B",
-    rd1: 41,
-    rd2: 0,
-    rd3: 0,
-    rd4: 0,
-    total: 41,
-  },
-  ]
+  const [standings, setStandings] = useState<IStandings[]>([])
 
-  const createStandings = teams
-    .sort((a, b) => a.total > b.total ? 1 : -1  )
+  useEffect(() =>  {
+    axios
+    .get<IStandings[]>("/standings", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+    })
+    .then(response => {
+      console.log(response.data)
+      setStandings(response.data);
+    })
+    .catch(ex => {
+      const error =
+      ex.response.status === 404
+        ? "Resource not found"
+        : "An unexpected error has occurred";
+        console.log(error)
+    });
+}, [])
+
+  const createStandings = standings
+    .sort((a, b) => a.average > b.average ? 1 : -1  )
     .map(row => {
     return(
       <tr className="bg-babyPowder">
@@ -86,25 +35,25 @@ export const Standings = (): JSX.Element => {
         <div className="flex items-center">
           <div className="ml-4">
             <div className="text-sm font-medium text-gray-900">
-              {row.name}
+              {row.team_name}
             </div>
           </div>
         </div>
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
-        <div className="text-sm text-gray-900">{row.total}</div>
+        <div className="text-sm text-gray-900">{row.average}</div>
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
-        <div className="text-sm text-gray-900">{row.rd1}</div>
+        <div className="text-sm text-gray-900">{row.round1}</div>
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
-        <div className="text-sm text-gray-900">{row.rd2}</div>
+        <div className="text-sm text-gray-900">{row.round2}</div>
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
-        <div className="text-sm text-gray-900">{row.rd3}</div>
+        <div className="text-sm text-gray-900">{row.round3}</div>
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
-        <div className="text-sm text-gray-900">{row.rd4}</div>
+        <div className="text-sm text-gray-900">{row.round4}</div>
       </td>
     </tr>
     )

@@ -13,6 +13,36 @@ CREATE TABLE teams(
   player2_email varchar(255)
 )
 
+CREATE TABLE standings(
+  team_name VARCHAR(255),
+  round1 SMALLINT,
+  round2 SMALLINT,
+  round3 SMALLINT,
+  round4 SMALLINT,
+  average SMALLINT,
+  handicap SMALLINT,
+  photo VARCHAR(255)
+);
+
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Pat & Beavis', 46, 0, 0, 0, 46, 0.3, 'insertPhoto.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Seth & Souhail', 0, 0, 0, 0, 0, 5.6, 'seth-souhail.jpg' );
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Sean & Alex', 0, 0, 0, 0, 0, 7.3, 'sean-alex.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Ben & Joe', 39, 0, 0, 0, 39, 6.7, 'joe-ben.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Drew & Lyndsie', 36, 0, 0, 0, 36, 8.2, 'drewLynds.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Eric & Rourke', 45, 0, 0, 0, 45, 3.9, 'ericJay.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('JayD & Brandon', 41, 0, 0, 0, 41, 8.3, 'insertPhoto.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('JL3 & Ryan', 41, 0, 0, 0, 41, 11.1, 'ryanDad.jpg');
+INSERT INTO standings (team_name, round1, round2, round3, round4, average, handicap, photo) VALUES ('Dustin & Geo', 40, 0, 0, 0, 40, 7.1, 'dustin-geo.jpg');
+
+UPDATE standings SET photo = 'insertPhoto.jpg' WHERE team_name = 'JayD & Brandon';
+UPDATE standings SET photo = 'seth-souhail.jpg' WHERE team_name = 'Seth & Souhail';
+UPDATE standings SET photo = 'joe-ben.jpg' WHERE team_name = 'Ben & Joe';
+UPDATE standings SET photo = 'drewLynds.jpg' WHERE team_name = 'Drew & Lyndsie';
+UPDATE standings SET photo = 'ericJay.jpg' WHERE team_name = 'Eric & Rourke';
+UPDATE standings SET photo = 'ryanDad.jpg' WHERE team_name = 'JL3 & Ryan';
+UPDATE standings SET photo = 'dustin-geo.jpg' WHERE team_name = 'Dustin & Geo';
+
+
 -- january
 INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-01', '', '{}', 1, 'Saturday');
 INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-02', '', '{}', 2, 'Sunday');
@@ -132,3 +162,7 @@ UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-02-09';
 
 UPDATE teams SET players = 'Brendon & JayD' WHERE player2_email = 'jayd1055@yahoo.com';
 UPDATE teams SET player1_email = 'Brendon@gbent.net' WHERE player2_email = 'jayd1055@yahoo.com';
+
+-- Update standings - update round, score, and team name
+UPDATE standings SET round1 = 43 WHERE team_name = '';
+UPDATE standings SET photo = 'insertPhoto.jpg' WHERE team_name = 'Pat & Beavis';
