@@ -6,7 +6,7 @@ import { March } from './months/March';
 
 export const LeagueCalendar = (): JSX.Element => {
 
-  const [month, setMonth] = useState<string>("January")
+  const [month, setMonth] = useState<string>("February")
 
   const changeMonthRight = () => {
     if (month === "January"){
