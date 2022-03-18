@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import { January } from './months/January';
 import { February } from './months/February';
 import { March } from './months/March';
+import { April } from './months/April';
 
 
 export const LeagueCalendar = (): JSX.Element => {
 
-  const [month, setMonth] = useState<string>("February")
+  const [month, setMonth] = useState<string>("March")
 
   const changeMonthRight = () => {
     if (month === "January"){
       setMonth("February")
     } else if (month === "February") {
       setMonth("March")
+    } else if (month === "March") {
+      setMonth("April")
     }
   }
 
@@ -21,6 +24,8 @@ export const LeagueCalendar = (): JSX.Element => {
       setMonth("February")
     } else if (month === "February") {
       setMonth("January")
+    } else if (month === "April") {
+      setMonth("March")
     }
   }
 
@@ -29,8 +34,10 @@ export const LeagueCalendar = (): JSX.Element => {
     showMonth = <January />
   } else if (month === "February"){
     showMonth = <February />
-  } else {
+  } else if (month === "March"){
     showMonth = <March />
+  } else {
+    showMonth = <April />
   }
 
   return (

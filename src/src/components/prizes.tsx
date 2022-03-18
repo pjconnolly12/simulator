@@ -5,8 +5,8 @@ export const Prizes = (): JSX.Element => {
   const winners = [
     {
       round: "Round 1",
-      closest: "",
-      skins: [],
+      closest: "N/A",
+      skins: ["Seth & Souhail - 2", "Drew & Lyndsie - 1"],
     },
     {
       round: "Round 2",

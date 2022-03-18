@@ -119,7 +119,17 @@ app.get('/calendar/february', async (req, res) => {
 // march
 app.get('/calendar/march', async (req, res) => {
   try {
-    const dates = await pool.query("SELECT DISTINCT * FROM calendar WHERE entry_date > '2022-02-28' ORDER BY day_of_month");
+    const dates = await pool.query("SELECT DISTINCT * FROM calendar WHERE entry_date BETWEEN '2022-03-01' AND '2022-03-31' ORDER BY day_of_month");
+    res.json(dates.rows);
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
+// april
+app.get('/calendar/april', async (req, res) => {
+  try {
+    const dates = await pool.query("SELECT DISTINCT * FROM calendar WHERE entry_date BETWEEN '2022-04-01' AND '2022-04-30' ORDER BY day_of_month");
     res.json(dates.rows);
   } catch (err) {
     console.error(err.message);
