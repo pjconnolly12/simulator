@@ -136,6 +136,16 @@ app.get('/calendar/april', async (req, res) => {
   }
 });
 
+// may
+app.get('/calendar/may', async (req, res) => {
+  try {
+    const dates = await pool.query("SELECT DISTINCT * FROM calendar WHERE entry_date BETWEEN '2022-05-01' AND '2022-05-31' ORDER BY day_of_month");
+    res.json(dates.rows);
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
 // get teams //
 app.get('/teams', async (req, res) => {
   try {
