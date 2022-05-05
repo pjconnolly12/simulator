@@ -3,11 +3,12 @@ import { January } from './months/January';
 import { February } from './months/February';
 import { March } from './months/March';
 import { April } from './months/April';
+import { May } from './months/May';
 
 
 export const LeagueCalendar = (): JSX.Element => {
 
-  const [month, setMonth] = useState<string>("March")
+  const [month, setMonth] = useState<string>("May")
 
   const changeMonthRight = () => {
     if (month === "January"){
@@ -16,6 +17,8 @@ export const LeagueCalendar = (): JSX.Element => {
       setMonth("March")
     } else if (month === "March") {
       setMonth("April")
+    } else if (month === "April") {
+      setMonth("May")
     }
   }
 
@@ -26,6 +29,8 @@ export const LeagueCalendar = (): JSX.Element => {
       setMonth("January")
     } else if (month === "April") {
       setMonth("March")
+    } else if (month === "May") {
+      setMonth("April")
     }
   }
 
@@ -36,8 +41,10 @@ export const LeagueCalendar = (): JSX.Element => {
     showMonth = <February />
   } else if (month === "March"){
     showMonth = <March />
-  } else {
+  } else if (month === "April") {
     showMonth = <April />
+  } else {
+    showMonth = <May />
   }
 
   return (
