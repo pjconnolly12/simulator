@@ -43,38 +43,38 @@ UPDATE standings SET photo = 'ryanDad.jpg' WHERE team_name = 'JL3 & Ryan';
 UPDATE standings SET photo = 'dustin-geo.jpg' WHERE team_name = 'Dustin & Geo';
 
 
--- january
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-01', '', '{}', 1, 'Saturday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-02', '', '{}', 2, 'Sunday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-03', '', '{}', 3, 'Monday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-04', '', '{}', 4, 'Tuesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-05', 'N/A @ 6PM', '{}', 5, 'Wednesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-06', '', '{}', 6, 'Thursday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-07', '', '{}', 7, 'Friday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-08', '', '{}', 8, 'Saturday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-09', '', '{}', 9, 'Sunday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-10', '', '{}', 10, 'Monday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-11', '', '{}', 11, 'Tuesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-12', 'N/A @ 6PM', '{}', 12, 'Wednesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-13', '', '{}', 13, 'Thursday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-14', '', '{}', 14, 'Friday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-15', '', '{}', 15, 'Saturday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-16', '', '{}', 16, 'Sunday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-17', '', '{}', 17, 'Monday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-18', '', '{}', 18, 'Tuesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-19', 'N/A @ 6PM', '{}', 19, 'Wednesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-20', '', '{}', 20, 'Thursday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-21', '', '{}', 21, 'Friday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-22', '', '{}', 22, 'Saturday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-23', '', '{}', 23, 'Sunday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-24', '', '{}', 24, 'Monday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-25', '', '{}', 25, 'Tuesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-26', 'N/A @ 6PM', '{}', 26, 'Wednesday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-27', '', '{}', 27, 'Thursday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-28', '', '{}', 28, 'Friday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-29', '', '{}', 29, 'Saturday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-30', '', '{}', 30, 'Sunday');
-INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-01-31', '', '{}', 31, 'Monday');
+-- May
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-01', '', '{}', 1, 'Sunday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-02', '', '{}', 2, 'Monday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-03', '', '{}', 3, 'Tuesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-04', '', '{}', 4, 'Wednesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-05', '', '{}', 5, 'Thursday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-06', '', '{}', 6, 'Friday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-07', '', '{}', 7, 'Saturday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-08', '', '{}', 8, 'Sunday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-09', '', '{}', 9, 'Monday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-10', '', '{}', 10, 'Tuesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-11', '', '{}', 11, 'Wednesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-12', '', '{}', 12, 'Thursday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-13', '', '{}', 13, 'Friday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-14', '', '{}', 14, 'Saturday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-15', '', '{}', 15, 'Sunday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-16', '', '{}', 16, 'Monday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-17', '', '{}', 17, 'Tuesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-18', '', '{}', 18, 'Wednesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-19', '', '{}', 19, 'Thursday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-20', '', '{}', 20, 'Friday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-21', '', '{}', 21, 'Saturday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-22', '', '{}', 22, 'Sunday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-23', '', '{}', 23, 'Monday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-24', '', '{}', 24, 'Tuesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-25', '', '{}', 25, 'Wednesday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-26', '', '{}', 26, 'Thursday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-27', '', '{}', 27, 'Friday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-28', '', '{}', 28, 'Saturday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-29', '', '{}', 29, 'Sunday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-30', '', '{}', 30, 'Monday');
+INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-05-31', '', '{}', 31, 'Tuesday');
 
 -- february
 INSERT INTO calendar (entry_date, restrictions, matches, day_of_month, day_of_week) VALUES ('2022-02-01', '', '{}', 1, 'Tuesday');
@@ -185,7 +185,7 @@ INSERT INTO teams (players, player1_email, player2_email) VALUES('Brendon & JayD
 
 UPDATE calendar SET matches = '{}' WHERE entry_date = '2022-01-20'
 
-UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-03-02';
+UPDATE calendar SET restrictions = 'N/A after 6pm' WHERE entry_date = '2022-03-23';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-03-09';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-03-16';
 UPDATE calendar SET restrictions = '' WHERE entry_date = '2022-03-23';
@@ -204,10 +204,10 @@ UPDATE teams SET player1_email = 'Brendon@gbent.net' WHERE player2_email = 'jayd
 
 
 -- Update standings - update round, score, and team name
-UPDATE standings SET round1 = 37 WHERE team_name = 'Seth & Souhail';
-UPDATE standings SET round2 = 37 WHERE team_name = 'Seth & Souhail';
-UPDATE standings SET round3 = 37 WHERE team_name = 'Seth & Souhail';
-UPDATE standings SET round4 = 37 WHERE team_name = 'Seth & Souhail';
+UPDATE standings SET average = 40 WHERE team_name = 'Pat & Beavis';
+UPDATE standings SET round2 = 34 WHERE team_name = 'Pat & Beavis';
+UPDATE standings SET round3 = 39 WHERE team_name = 'Eric & Rourke';
+UPDATE standings SET round4 = 32 WHERE team_name = 'Eric & Rourke';
 UPDATE standings SET photo = 'insertPhoto.jpg' WHERE team_name = 'Pat & Beavis';
 UPDATE standings SET average = 37 WHERE team_name = 'Seth & Souhail';
-UPDATE standings SET handicap = 7 WHERE team_name = 'Eric & Rourke';
+UPDATE standings SET handicap = 9 WHERE team_name = 'Sean & Alex';
